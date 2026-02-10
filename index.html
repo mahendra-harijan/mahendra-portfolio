@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahendra Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your public key
+        (function() {
+            emailjs.init("UCArpK50AMWN8hVjB"); // Replace with your actual EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+    <!-- ========== NAVIGATION SECTION ========== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <!-- Logo Section -->
+                <div class="logo-container">
+                    <div class="logo-circle">
+                        <img class="logo" src="utils/image/logo.jpeg" alt="Mahendra Portfolio Logo">
+                    </div>
+                    <span class="logo-text">Mahendra</span>
+                </div>
+                
+                <!-- Main Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#header" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#project" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skill" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                
+                <!-- Navigation Actions -->
+                <div class="nav-actions">
+                    <!-- Dark/Light Mode Toggle -->
+                    <div class="theme-toggle" id="themeToggle">
+                        <input type="checkbox" id="themeSwitch" class="theme-switch">
+                        <label for="themeSwitch" class="theme-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="theme-ball"></span>
+                        </label>
+                    </div>
+                    
+                    <a href="#contact" class="hire-btn">
+                        <i class="fas fa-briefcase"></i> Hire Me
+                    </a>
+                    <!-- Mobile Menu Toggle -->
+                    <button class="menu-toggle" id="menuToggle">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="header">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Hero Text Content -->
+                <div class="hero-text">
+                    <div class="greeting-wrapper">
+                        <span class="greeting-icon">👋</span>
+                        <p class="greeting">Hello, I'm</p>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Mahendra</span>
+                        <span class="title-line highlight">Harijan</span>
+                    </h1>
+                    
+                    <!-- Typewriter Animation Container -->
+                    <div class="typewriter-container">
+                        <h2 class="animated-text">Frontend Developer</h2>
+                    </div>
+                    
+                    <p class="hero-description">
+                        I create <span class="text-gradient">beautiful</span>, <span class="text-gradient">functional</span> web experiences that 
+                        make a difference. Passionate about clean code and user-centric design.
+                    </p>
+                    
+                    <!-- Hero Buttons -->
+                    <div class="hero-buttons">
+                        <a href="utils/document/my_cv.pdf" download class="btn primary-btn">
+                            <i class="fas fa-download"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn secondary-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image with Animation -->
+                <div class="hero-image">
+                    <div class="floating-image-container">
+                        <!-- Animated Background Shapes -->
+                        <div class="bg-shape shape-1"></div>
+                        <div class="bg-shape shape-2"></div>
+                        <div class="bg-shape shape-3"></div>
+                        
+                        <!-- Main Profile Image Container -->
+                        <div class="image-3d-container">
+                            <div class="image-wrapper">
+                                <img src="utils/image/homeimg.jpg" alt="Mahendra Harijan" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <!-- <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll down</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <!-- <span class="section-label">About Me</span> -->
+                <h2 class="section-title">My Journey & Expertise</h2>
+                <p class="section-subtitle">Passionate developer creating amazing web experiences</p>
+            </div>
+            
+            <div class="about-content">
+                <!-- About Statistics -->
+                <div class="about-stats">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="stat-number" data-count="3">0</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="stat-number" data-count="8.5">0</h3>
+                            <p class="stat-label">CGPA</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="stat-number" data-count="30">0</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="stat-number" data-count="15">0</h3>
+                            <p class="stat-label">Awards Won</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Text Content -->
+                <div class="about-text">
+                    <h3 class="about-title">Hi, I'm Mahendra <span class="highlight">Harijan</span></h3>
+                    <p class="about-description">
+                        I'm a passionate frontend developer with expertise in creating responsive, 
+                        accessible, and performant websites. I enjoy turning complex problems 
+                        into simple, beautiful designs.
+                    </p>
+                    
+                    <!-- About Tabs -->
+                    <div class="about-tabs">
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="skills">
+                                <i class="fas fa-code"></i> Skills
+                            </button>
+                            <button class="tab-btn" data-tab="experience">
+                                <i class="fas fa-briefcase"></i> Experience
+                            </button>
+                            <button class="tab-btn" data-tab="education">
+                                <i class="fas fa-graduation-cap"></i> Education
+                            </button>
+                        </div>
+                        
+                        <div class="tabs-content">
+                            <!-- Skills Tab -->
+                            <div class="tab-pane active" id="skills">
+                                <div class="skills-mini">
+                                    <div class="skill-item">
+                                        <div class="skill-progress">
+                                            <div class="progress-bar" style="width: 90%"></div>
+                                        </div>
+                                        <span>Frontend Development</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-progress">
+                                            <div class="progress-bar" style="width: 85%"></div>
+                                        </div>
+                                        <span>UI/UX Design</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-progress">
+                                            <div class="progress-bar" style="width: 80%"></div>
+                                        </div>
+                                        <span>Backend Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Experience Tab -->
+                            <div class="tab-pane" id="experience">
+                                <div class="experience-timeline">
+                                    <div class="timeline-item">
+                                        <h4>Frontend Developer</h4>
+                                        <span class="timeline-date">2022 - Present</span>
+                                        <p>Creating responsive web applications with modern technologies</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <h4>Web Designer</h4>
+                                        <span class="timeline-date">2020 - 2022</span>
+                                        <p>Designing user-friendly interfaces and experiences</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Education Tab -->
+                            <div class="tab-pane" id="education">
+                                <div class="education-list">
+                                    <div class="education-item">
+                                        <h4>B.Tech Computer Science</h4>
+                                        <span class="education-date">PDPU University</span>
+                                        <p>Specialized in web development and software engineering</p>
+                                    </div>
+                                    <div class="education-item">
+                                        <h4>12th Grade - Science</h4>
+                                        <span class="education-date">Shree Ram Naresh Yadav School</span>
+                                        <p>Computer Science with distinction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skill">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Skills</span>
+                <h2 class="section-title">Technologies I Work With</h2>
+                <p class="section-subtitle">Mastering modern web technologies to create amazing products</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Frontend Development Card -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, React.js, Vue.js, Angular, TypeScript</p>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Vue</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+                
+                <!-- Backend Development Card -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, Python, Django, REST APIs, Database Design</p>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                
+                <!-- UI/UX Design Card -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD, User Research, Wireframing, Prototyping, Responsive Design</p>
+                    <div class="skill-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Adobe XD</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Wireframing</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & DevOps Card -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Tools & DevOps</h3>
+                    <p>Git, Docker, AWS, CI/CD, Webpack, Testing Frameworks, Agile/Scrum</p>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Webpack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="project">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my best work and creative solutions</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- University Management System Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="utils/image/project1.png" alt="WanderStay">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Full Stack</div>
+                        <h3>WanderStay Travel Platform</h3>
+                        <p>A comprehensive system for managing students, courses, faculty, and library records with database integration.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Payroll Management System Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="utils/image/payroll.png" alt="Payroll Management System">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Web Application</div>
+                        <h3>Payroll Management System</h3>
+                        <p>Automated payroll system reducing processing time by 40% with salary calculation and report generation.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Django</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chat Application Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="utils/image/chat.jpg" alt="Chat Application">
+                        <div class="project-overlay">
+                            <a href="#" class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Real-time App</div>
+                        <h3>Real-time Chat Application</h3>
+                        <p>Real-time messaging application with 99.9% uptime, featuring group chats and file sharing capabilities.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#" class="btn view-all-btn">
+                    <i class="fas fa-eye"></i> View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how we can bring your ideas to life</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Illustration -->
+                <div class="contact-illustration">
+                    <div class="contact-shapes">
+                        <div class="contact-shape shape-1"></div>
+                        <div class="contact-shape shape-2"></div>
+                        <div class="contact-shape shape-3"></div>
+                    </div>
+                    <div class="contact-image">
+                        <img src="contact-illustration.svg" alt="Contact Illustration" class="illustration-img">
+                    </div>
+                    <div class="contact-info-mini">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mahendra201118@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9621932358</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rohini-3 Rupandehi, Nepal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="from_name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" id="email" name="reply_to" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span id="submitText">Send Message</span>
+                            <div class="spinner" id="formSpinner" style="display: none;">
+                                <div class="spinner-dot"></div>
+                                <div class="spinner-dot"></div>
+                                <div class="spinner-dot"></div>
+                            </div>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="success-content">
+                            <h4>Message Sent Successfully!</h4>
+                            <p>Thank you for your message. I'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div class="form-error" id="formError">
+                        <div class="error-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="error-content">
+                            <h4>Something went wrong!</h4>
+                            <p>Please try again or contact me directly via email.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Logo and Description -->
+                <div class="footer-logo">
+                    <div class="logo-container">
+                        <div class="logo-circle">
+                            <img class="logo" src="utils/image/logo.jpeg" alt="Logo">
+                        </div>
+                        <div>
+                            <h3>Mahendra Harijan</h3>
+                            <p>Frontend Developer & Designer</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Creating beautiful, functional web experiences with modern technologies 
+                        and best practices.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="link-list">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul class="service-list">
+                        <li>Web Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Frontend Consulting</li>
+                        <li>Responsive Design</li>
+                        <li>Web Performance</li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to my newsletter for latest updates and tips.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year"></span> Mahendra Harijan. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/mahendra201118" class="footer-social-icon" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/MahendraHa66638" class="footer-social-icon" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mahendra-harijan-213b66357" class="footer-social-icon" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mahendra201118-wq" class="footer-social-icon" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -126,7 +126,7 @@ tabBtns.forEach(btn => {
 /**
  * Typewriter animation for hero section
  */
-const texts = ["Frontend Developer", "UI/UX Designer", "Web Developer", "Problem Solver"];
+const texts = ["Full Stack Developer", "Backend Developer", "AI Application Builder"];
 let count = 0;
 let index = 0;
 let currentText = "";

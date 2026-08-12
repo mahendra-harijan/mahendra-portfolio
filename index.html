@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahendra Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Primary Meta Tags -->
+    <title>Mahendra Harijan | Full Stack Developer</title>
+    <meta name="title" content="Mahendra Harijan | Full Stack Developer">
+    <meta name="description"
+        content="Portfolio of Mahendra Harijan, a Full Stack Developer specializing in React, Node.js, and real-time scalable web applications.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mahendrarahijan.me/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mahendrarahijan.me/">
+    <meta property="og:title" content="Mahendra Harijan | Full Stack Developer">
+    <meta property="og:description"
+        content="Portfolio of Mahendra Harijan, a Full Stack Developer specializing in React, Node.js, and real-time scalable web applications.">
+    <meta property="og:image" content="https://mahendrarahijan.me/utils/image/homeimg.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mahendrarahijan.me/">
+    <meta property="twitter:title" content="Mahendra Harijan | Full Stack Developer">
+    <meta property="twitter:description"
+        content="Portfolio of Mahendra Harijan, a Full Stack Developer specializing in React, Node.js, and real-time scalable web applications.">
+    <meta property="twitter:image" content="https://mahendrarahijan.me/utils/image/homeimg.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mahendra Harijan",
+      "url": "https://mahendrarahijan.me/",
+      "image": "https://mahendrarahijan.me/utils/image/homeimg.jpg",
+      "jobTitle": "Full Stack Developer",
+      "sameAs": [
+        "https://github.com/mahendra-harijan",
+        "https://www.linkedin.com/in/mahendra-harijan-213b66357",
+        "https://x.com/MahendraHa66638",
+        "https://www.facebook.com/mahendra201118"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Mahendra Harijan Portfolio",
+      "url": "https://mahendrarahijan.me/"
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- EmailJS Library -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         // Initialize EmailJS with your public key
-        (function() {
+        (function () {
             emailjs.init("UCArpK50AMWN8hVjB"); // Replace with your actual EmailJS public key
         })();
     </script>
 </head>
+
 <body>
     <!-- ========== NAVIGATION SECTION ========== -->
     <nav class="navbar">
@@ -28,7 +88,7 @@
                     </div>
                     <span class="logo-text">Mahendra</span>
                 </div>
-                
+
                 <!-- Main Navigation Menu -->
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#header" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
@@ -37,7 +97,7 @@
                     <li><a href="#skill" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
                     <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
-                
+
                 <!-- Navigation Actions -->
                 <div class="nav-actions">
                     <!-- Dark/Light Mode Toggle -->
@@ -49,7 +109,7 @@
                             <span class="theme-ball"></span>
                         </label>
                     </div>
-                    
+
                     <a href="#contact" class="hire-btn">
                         <i class="fas fa-briefcase"></i> Hire Me
                     </a>
@@ -64,414 +124,418 @@
         </div>
     </nav>
 
-   <!-- ========== HERO SECTION ========== -->
-<section id="header">
-    <div class="container">
-        <div class="hero-content">
+    <!-- ========== HERO SECTION ========== -->
+    <section id="header">
+        <div class="container">
+            <div class="hero-content">
 
-            <!-- Hero Text -->
-            <div class="hero-text">
-                <div class="greeting-wrapper">
-                    <span class="greeting-icon">👋</span>
-                    <p class="greeting">Hello, I'm</p>
-                </div>
-
-                <h1 class="hero-title">
-                    <span class="title-line">Mahendra</span>
-                    <span class="title-line highlight">Harijan</span>
-                </h1>
-
-                <!-- Typewriter -->
-                <div class="typewriter-container">
-                    <h2 class="animated-text">Full Stack Developer</h2>
-                </div>
-
-                <p class="hero-description">
-                    I build <span class="text-gradient">scalable</span>, 
-                    <span class="text-gradient">real-time</span>, and 
-                    <span class="text-gradient">AI-powered</span> web applications using modern technologies.  
-                    Passionate about backend systems, APIs, and creating impactful digital products.
-                </p>
-
-                <!-- Buttons -->
-                <div class="hero-buttons">
-                    <a href="utils/document/Mahendra_Harijan_Resume.pdf" download class="btn primary-btn">
-                        <i class="fas fa-download"></i>
-                        <span>Download Resume</span>
-                    </a>
-
-                    <a href="#project" class="btn secondary-btn">
-                        <i class="fas fa-code"></i>
-                        <span>View Projects</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Image -->
-            <div class="hero-image">
-                <div class="floating-image-container">
-
-                    <div class="bg-shape shape-1"></div>
-                    <div class="bg-shape shape-2"></div>
-                    <div class="bg-shape shape-3"></div>
-
-                    <div class="image-3d-container">
-                        <div class="image-wrapper">
-                            <img src="utils/image/homeimg.jpg" alt="Mahendra Harijan" class="profile-image">
-                        </div>
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <div class="greeting-wrapper">
+                        <span class="greeting-icon">👋</span>
+                        <p class="greeting">Hello, I'm</p>
                     </div>
 
+                    <h1 class="hero-title">
+                        <span class="title-line">Mahendra</span>
+                        <span class="title-line highlight">Harijan</span>
+                    </h1>
+
+                    <!-- Typewriter -->
+                    <div class="typewriter-container">
+                        <h2 class="animated-text">Full Stack Developer</h2>
+                    </div>
+
+                    <p class="hero-description">
+                        I build <span class="text-gradient">scalable</span>,
+                        <span class="text-gradient">real-time</span>, and
+                        <span class="text-gradient">AI-powered</span> web applications using modern technologies.
+                        Passionate about backend systems, APIs, and creating impactful digital products.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="hero-buttons">
+                        <a href="utils/document/Mahendra_Harijan_Resume.pdf" download class="btn primary-btn">
+                            <i class="fas fa-download"></i>
+                            <span>Download Resume</span>
+                        </a>
+
+                        <a href="#project" class="btn secondary-btn">
+                            <i class="fas fa-code"></i>
+                            <span>View Projects</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="hero-image">
+                    <div class="floating-image-container">
+
+                        <div class="bg-shape shape-1"></div>
+                        <div class="bg-shape shape-2"></div>
+                        <div class="bg-shape shape-3"></div>
+
+                        <div class="image-3d-container">
+                            <div class="image-wrapper">
+                                <img src="utils/image/homeimg.jpg" alt="Mahendra Harijan" class="profile-image">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- ========== ABOUT SECTION ========== -->
-<section id="about">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">Full Stack Developer building scalable and real-time applications</p>
-        </div>
-        
-        <div class="about-content">
-
-            <!-- Stats -->
-            <div class="about-stats">
-                <div class="stats-grid">
-
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="3">0</h3>
-                        <p class="stat-label">Projects Built</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="8.6">0</h3>
-                        <p class="stat-label">CGPA</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="5">0</h3>
-                        <p class="stat-label">Technologies</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="2">0</h3>
-                        <p class="stat-label">Deployed Apps</p>
-                    </div>
-
-                </div>
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Full Stack Developer building scalable and real-time applications</p>
             </div>
 
-            <!-- Text -->
-            <div class="about-text">
-                <h3 class="about-title">Hi, I'm Mahendra <span class="highlight">Harijan</span></h3>
-                
-                <p class="about-description">
-                    I am a Full Stack Developer passionate about building scalable web applications 
-                    and real-time systems. I specialize in developing backend APIs, authentication systems, 
-                    and modern frontend interfaces using React.
-                </p>
+            <div class="about-content">
 
-                <p class="about-description">
-                    I have built AI-powered tools like an ATS Resume Analyzer and real-time platforms 
-                    like video conferencing applications using WebRTC and WebSockets.
-                </p>
+                <!-- Stats -->
+                <div class="about-stats">
+                    <div class="stats-grid">
 
-                <!-- Tabs -->
-                <div class="about-tabs">
-
-                    <div class="tabs-header">
-                        <button class="tab-btn active" data-tab="skills">
-                            <i class="fas fa-code"></i> Skills
-                        </button>
-                        <button class="tab-btn" data-tab="tech">
-                            <i class="fas fa-layer-group"></i> Tech Stack
-                        </button>
-                        <button class="tab-btn" data-tab="education">
-                            <i class="fas fa-graduation-cap"></i> Education
-                        </button>
-                    </div>
-
-                    <div class="tabs-content">
-
-                        <!-- Skills -->
-                        <div class="tab-pane active" id="skills">
-                            <div class="skills-mini">
-
-                                <div class="skill-item">
-                                    <div class="skill-progress">
-                                        <div class="progress-bar" style="width: 85%"></div>
-                                    </div>
-                                    <span>Full Stack Development</span>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-progress">
-                                        <div class="progress-bar" style="width: 80%"></div>
-                                    </div>
-                                    <span>Backend & API Development</span>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-progress">
-                                        <div class="progress-bar" style="width: 75%"></div>
-                                    </div>
-                                    <span>Real-Time Systems (WebRTC, Socket.io)</span>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="skill-progress">
-                                        <div class="progress-bar" style="width: 70%"></div>
-                                    </div>
-                                    <span>Authentication & Security (JWT)</span>
-                                </div>
-
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
                             </div>
+                            <h3 class="stat-number" data-count="3">0</h3>
+                            <p class="stat-label">Projects Built</p>
                         </div>
 
-                        <!-- Tech Stack -->
-                        <div class="tab-pane" id="tech">
-                            <div class="skills-mini">
-
-                                <p><strong>Frontend:</strong> React, HTML, CSS, JavaScript</p>
-                                <p><strong>Backend:</strong> Node.js, Express.js</p>
-                                <p><strong>Database:</strong> MongoDB, MySQL</p>
-                                <p><strong>Tools:</strong> Git, GitHub, Vercel, Render</p>
-                                <p><strong>Other:</strong> WebRTC, Socket.io, REST APIs, JWT</p>
-
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
                             </div>
+                            <h3 class="stat-number" data-count="8.6">0</h3>
+                            <p class="stat-label">CGPA</p>
                         </div>
 
-                        <!-- Education -->
-                        <div class="tab-pane" id="education">
-                            <div class="education-list">
-
-                                <div class="education-item">
-                                    <h4>B.Tech Computer Science</h4>
-                                    <span class="education-date">Pandit Deendayal Energy University</span>
-                                    <p>CGPA: 8.6 (2023 - 2027)</p>
-                                </div>
-
-                                <div class="education-item">
-                                    <h4>Higher Secondary (Class XII)</h4>
-                                    <span class="education-date">Shree Ram Naresh Yadav School</span>
-                                    <p>GPA: 3.43/4</p>
-                                </div>
-
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-server"></i>
                             </div>
+                            <h3 class="stat-number" data-count="5">0</h3>
+                            <p class="stat-label">Technologies</p>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="stat-number" data-count="2">0</h3>
+                            <p class="stat-label">Deployed Apps</p>
                         </div>
 
                     </div>
                 </div>
+
+                <!-- Text -->
+                <div class="about-text">
+                    <h3 class="about-title">Hi, I'm Mahendra <span class="highlight">Harijan</span></h3>
+
+                    <p class="about-description">
+                        I am a Full Stack Developer passionate about building scalable web applications
+                        and real-time systems. I specialize in developing backend APIs, authentication systems,
+                        and modern frontend interfaces using React.
+                    </p>
+
+                    <p class="about-description">
+                        I have built AI-powered tools like an ATS Resume Analyzer and real-time platforms
+                        like video conferencing applications using WebRTC and WebSockets.
+                    </p>
+
+                    <!-- Tabs -->
+                    <div class="about-tabs">
+
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="skills">
+                                <i class="fas fa-code"></i> Skills
+                            </button>
+                            <button class="tab-btn" data-tab="tech">
+                                <i class="fas fa-layer-group"></i> Tech Stack
+                            </button>
+                            <button class="tab-btn" data-tab="education">
+                                <i class="fas fa-graduation-cap"></i> Education
+                            </button>
+                        </div>
+
+                        <div class="tabs-content">
+
+                            <!-- Skills -->
+                            <div class="tab-pane active" id="skills">
+                                <div class="skills-mini">
+
+                                    <div class="skill-item">
+                                        <div class="skill-progress">
+                                            <div class="progress-bar" style="width: 85%"></div>
+                                        </div>
+                                        <span>Full Stack Development</span>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-progress">
+                                            <div class="progress-bar" style="width: 80%"></div>
+                                        </div>
+                                        <span>Backend & API Development</span>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-progress">
+                                            <div class="progress-bar" style="width: 75%"></div>
+                                        </div>
+                                        <span>Real-Time Systems (WebRTC, Socket.io)</span>
+                                    </div>
+
+                                    <div class="skill-item">
+                                        <div class="skill-progress">
+                                            <div class="progress-bar" style="width: 70%"></div>
+                                        </div>
+                                        <span>Authentication & Security (JWT)</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Tech Stack -->
+                            <div class="tab-pane" id="tech">
+                                <div class="skills-mini">
+
+                                    <p><strong>Frontend:</strong> React, HTML, CSS, JavaScript</p>
+                                    <p><strong>Backend:</strong> Node.js, Express.js</p>
+                                    <p><strong>Database:</strong> MongoDB, MySQL</p>
+                                    <p><strong>Tools:</strong> Git, GitHub, Vercel, Render</p>
+                                    <p><strong>Other:</strong> WebRTC, Socket.io, REST APIs, JWT</p>
+
+                                </div>
+                            </div>
+
+                            <!-- Education -->
+                            <div class="tab-pane" id="education">
+                                <div class="education-list">
+
+                                    <div class="education-item">
+                                        <h4>B.Tech Computer Science</h4>
+                                        <span class="education-date">Pandit Deendayal Energy University</span>
+                                        <p>CGPA: 8.6 (2023 - 2027)</p>
+                                    </div>
+
+                                    <div class="education-item">
+                                        <h4>Higher Secondary (Class XII)</h4>
+                                        <span class="education-date">Shree Ram Naresh Yadav School</span>
+                                        <p>GPA: 3.43/4</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-   <!-- ========== SKILLS SECTION ========== -->
-<section id="skill">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Skills</span>
-            <h2 class="section-title">Technologies I Use</h2>
-            <p class="section-subtitle">Focused on building scalable full-stack and real-time applications</p>
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skill">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Technologies I Use</h2>
+                <p class="section-subtitle">Focused on building scalable full-stack and real-time applications</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive UI using modern JavaScript frameworks</p>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Developing scalable APIs and authentication systems</p>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Database Management</h3>
+                    <p>Designing and managing structured and NoSQL databases</p>
+                    <div class="skill-tags">
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Real-time & AI -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-bolt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Real-Time & AI Apps</h3>
+                    <p>Building real-time and AI-powered applications</p>
+                    <div class="skill-tags">
+                        <span class="tag">WebRTC</span>
+                        <span class="tag">Socket.io</span>
+                        <span class="tag">Groq API</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        
-        <div class="skills-grid">
+    </section>
 
-            <!-- Frontend -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-code"></i>
-                    <div class="icon-bg"></div>
-                </div>
-                <h3>Frontend Development</h3>
-                <p>Building responsive UI using modern JavaScript frameworks</p>
-                <div class="skill-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                </div>
-            </div>
-            
-            <!-- Backend -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-server"></i>
-                    <div class="icon-bg"></div>
-                </div>
-                <h3>Backend Development</h3>
-                <p>Developing scalable APIs and authentication systems</p>
-                <div class="skill-tags">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">JWT</span>
-                    <span class="tag">REST API</span>
-                </div>
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="project">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my best full-stack and real-time applications</p>
             </div>
 
-            <!-- Database -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-database"></i>
-                    <div class="icon-bg"></div>
-                </div>
-                <h3>Database Management</h3>
-                <p>Designing and managing structured and NoSQL databases</p>
-                <div class="skill-tags">
-                    <span class="tag">MongoDB</span>
-                    <span class="tag">MySQL</span>
-                </div>
-            </div>
+            <div class="projects-grid">
 
-            <!-- Real-time & AI -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-bolt"></i>
-                    <div class="icon-bg"></div>
-                </div>
-                <h3>Real-Time & AI Apps</h3>
-                <p>Building real-time and AI-powered applications</p>
-                <div class="skill-tags">
-                    <span class="tag">WebRTC</span>
-                    <span class="tag">Socket.io</span>
-                    <span class="tag">Groq API</span>
-                </div>
-            </div>
+                <!-- Resume Analyzer -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="utils/image/resume.png" alt="ATS Resume Analyzer">
+                        <div class="project-overlay">
+                            <a href="https://ats-resume-analyzer-m.vercel.app/" class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">AI / Full Stack</div>
+                        <h3>ATS Resume Analyzer</h3>
+                        <p>AI-powered resume analysis tool with PDF/DOCX parsing, keyword gap detection, and LLM-based
+                            scoring for ATS optimization.</p>
 
-        </div>
-    </div>
-</section>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Groq API</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
 
-   <!-- ========== PROJECTS SECTION ========== -->
-<section id="project">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">My Work</span>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Showcasing my best full-stack and real-time applications</p>
-        </div>
-        
-        <div class="projects-grid">
-
-            <!-- Resume Analyzer -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="utils/image/resume.png" alt="ATS Resume Analyzer">
-                    <div class="project-overlay">
-                        <a href="https://ats-resume-analyzer-m.vercel.app/" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <div class="project-links">
+                            <a href="https://ats-resume-analyzer-m.vercel.app/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/mahendra-harijan/ATS-resume-analyzer" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <div class="project-category">AI / Full Stack</div>
-                    <h3>ATS Resume Analyzer</h3>
-                    <p>AI-powered resume analysis tool with PDF/DOCX parsing, keyword gap detection, and LLM-based scoring for ATS optimization.</p>
-                    
-                    <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Groq API</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
 
-                    <div class="project-links">
-                        <a href="https://ats-resume-analyzer-m.vercel.app/" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/mahendra-harijan/ATS-resume-analyzer" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
+                <!-- MahaMeet -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="utils/image/mahameet.png" alt="MahaMeet Video Calling">
+                        <div class="project-overlay">
+                            <a href="https://mahameet-video-conferencing.vercel.app/" class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Real-Time App</div>
+                        <h3>MahaMeet Video Conferencing</h3>
+                        <p>Real-time video conferencing platform with peer-to-peer audio/video, group calls, and chat
+                            using WebRTC and WebSockets.</p>
+
+                        <div class="tech-stack">
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://mahameet-video-conferencing.vercel.app/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/mahendra-harijan/Mahameet-video-conferencing"
+                                class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- MahaMeet -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="utils/image/mahameet.png" alt="MahaMeet Video Calling">
-                    <div class="project-overlay">
-                        <a href="https://mahameet-video-conferencing.vercel.app/" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                <!-- StudyCraft -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="utils/image/studycraft.png" alt="StudyCraft Platform">
+                        <div class="project-overlay">
+                            <a href="https://studycraft-zwp6.onrender.com/" class="view-project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Full Stack</div>
+                        <h3>StudyCraft Platform</h3>
+                        <p>Productivity and learning platform with task management, scheduling system, and
+                            authentication features for students.</p>
+
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://studycraft-zwp6.onrender.com/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/mahendra-harijan/studycraft" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <div class="project-category">Real-Time App</div>
-                    <h3>MahaMeet Video Conferencing</h3>
-                    <p>Real-time video conferencing platform with peer-to-peer audio/video, group calls, and chat using WebRTC and WebSockets.</p>
-                    
-                    <div class="tech-stack">
-                        <span class="tech-tag">WebRTC</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Socket.io</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://mahameet-video-conferencing.vercel.app/" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/mahendra-harijan/Mahameet-video-conferencing" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- StudyCraft -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="utils/image/studycraft.png" alt="StudyCraft Platform">
-                    <div class="project-overlay">
-                        <a href="https://studycraft-zwp6.onrender.com/" class="view-project">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-category">Full Stack</div>
-                    <h3>StudyCraft Platform</h3>
-                    <p>Productivity and learning platform with task management, scheduling system, and authentication features for students.</p>
-                    
-                    <div class="tech-stack">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://studycraft-zwp6.onrender.com/" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/mahendra-harijan/studycraft" class="project-link">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- WanderStay -->
+                <!-- WanderStay -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="utils/image/project1.png" alt="WanderStay">
@@ -484,7 +548,8 @@
                     <div class="project-content">
                         <div class="project-category">Full Stack</div>
                         <h3>WanderStay Travel Platform</h3>
-                        <p>A comprehensive system for managing students, courses, faculty, and library records with database integration.</p>
+                        <p>A comprehensive system for managing students, courses, faculty, and library records with
+                            database integration.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
@@ -495,23 +560,24 @@
                             <a href="https://wanderstay-i1sm.onrender.com/" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
-                            <a href="https://github.com/mahendra-harijan/WanderStay-Travel-Platform" class="project-link">
+                            <a href="https://github.com/mahendra-harijan/WanderStay-Travel-Platform"
+                                class="project-link">
                                 <i class="fab fa-github"></i> Source Code
                             </a>
                         </div>
                     </div>
                 </div>
-            
 
-        </div>
 
-        <div class="projects-cta">
-            <a href="https://wanderstay-i1sm.onrender.com/" class="btn view-all-btn">
-                <i class="fas fa-eye"></i> View All Projects
-            </a>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://wanderstay-i1sm.onrender.com/" class="btn view-all-btn">
+                    <i class="fas fa-eye"></i> View All Projects
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- ========== CONTACT SECTION ========== -->
     <section id="contact">
@@ -519,9 +585,10 @@
             <div class="section-header">
                 <span class="section-label">Get In Touch</span>
                 <h2 class="section-title">Let's Work Together</h2>
-                <p class="section-subtitle">Have a project in mind? Let's discuss how we can bring your ideas to life</p>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how we can bring your ideas to life
+                </p>
             </div>
-            
+
             <div class="contact-content">
                 <!-- Contact Illustration -->
                 <div class="contact-illustration">
@@ -548,7 +615,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Contact Form -->
                 <div class="contact-form-container">
                     <form id="contactForm" class="contact-form">
@@ -562,17 +629,19 @@
                                 <input type="email" id="email" name="reply_to" placeholder="Enter your email" required>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="subject">Subject *</label>
-                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?"
+                                required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message">Your Message *</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..."
+                                required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="submit-btn" id="submitBtn">
                             <i class="fas fa-paper-plane"></i>
                             <span id="submitText">Send Message</span>
@@ -583,7 +652,7 @@
                             </div>
                         </button>
                     </form>
-                    
+
                     <!-- Success Message -->
                     <div class="form-success" id="formSuccess">
                         <div class="success-icon">
@@ -626,11 +695,11 @@
                         </div>
                     </div>
                     <p class="footer-description">
-                        Creating beautiful, functional web experiences with modern technologies 
+                        Creating beautiful, functional web experiences with modern technologies
                         and best practices.
                     </p>
                 </div>
-                
+
                 <!-- Quick Links -->
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -642,7 +711,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Services -->
                 <div class="footer-services">
                     <h4>Services</h4>
@@ -654,7 +723,7 @@
                         <li>Web Performance</li>
                     </ul>
                 </div>
-                
+
                 <!-- Newsletter -->
                 <div class="footer-newsletter">
                     <h4>Stay Updated</h4>
@@ -667,23 +736,24 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <div class="copyright">
                     <p>&copy; <span id="current-year"></span> Mahendra Harijan. All rights reserved.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.facebook.com/mahendra201118" class="footer-social-icon" target="_blank">
+                    <a href="https://www.facebook.com/mahendra201118" class="footer-social-icon" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://x.com/MahendraHa66638" class="footer-social-icon" target="_blank">
+                    <a href="https://x.com/MahendraHa66638" class="footer-social-icon" target="_blank" aria-label="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/mahendra-harijan-213b66357" class="footer-social-icon" target="_blank">
+                    <a href="https://www.linkedin.com/in/mahendra-harijan-213b66357" class="footer-social-icon"
+                        target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/mahendra201118-wq" class="footer-social-icon" target="_blank">
+                    <a href="https://github.com/mahendra-harijan" class="footer-social-icon" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -693,4 +763,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
